@@ -1,0 +1,39 @@
+.accountdetails {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.cardBody {
+  padding: 20px;
+  font-family: math;
+  font-size: 17px;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.cardText {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.profileimg {
+  width: 160px;
+  height: 160px;
+}
+/* 
+.leftsection {
+  border-right: 1px solid lightgray;
+} */
+
+.socialheading {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: crimson;
+  font-family: math;
+}

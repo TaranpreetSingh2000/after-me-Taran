@@ -1,0 +1,11 @@
+.houseProperty {
+  font-size: 18px;
+  color: darkblue;
+  font-family: monospace;
+}
+
+.formHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

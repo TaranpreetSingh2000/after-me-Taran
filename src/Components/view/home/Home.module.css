@@ -1,0 +1,83 @@
+.bannerimage {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+
+.fontchangetext {
+  font-weight: 700;
+  font-family: sans-serif;
+  color: #2448cc;
+  font-size: 3.6vw;
+}
+
+.innerbannertext {
+  color: #e3740c;
+  font-size: 4vw;
+}
+.button {
+  background: #e3740c;
+  border: medium none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 55px;
+  width: 30%;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding: 10px 30px;
+  touch-action: manipulation;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: black;
+  font-weight: 500;
+  border: 1px solid #e3740c;
+}
+
+@media (max-width: 900px) {
+  .button {
+    font-size: 14px;
+    height: 50px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .bannerimage {
+    display: none;
+  }
+
+  .columnwidthcontainer {
+    width: 100%;
+  }
+
+  .bannerinnercontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fontchangetext {
+    font-size: 7vw;
+    text-align: center;
+  }
+
+  .innerbannertext {
+    font-size: 7.5vw;
+  }
+  .button {
+    font-size: 14px;
+    height: 40%;
+    width: 50%;
+  }
+}

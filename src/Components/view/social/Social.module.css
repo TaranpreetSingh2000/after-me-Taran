@@ -1,0 +1,9 @@
+.social_list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+.icon{
+    color: #0c0cb8;
+}

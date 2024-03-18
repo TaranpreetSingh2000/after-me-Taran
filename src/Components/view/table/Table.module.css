@@ -1,0 +1,62 @@
+.entries {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.strapilink {
+  color: #3a34bc;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btncontainers {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.cardHeadingTitle {
+  font-size: 25px;
+  font-weight: 500;
+  color: darkblue;
+  font-family: sans-serif;
+  position: relative;
+  cursor: pointer;
+}
+
+.cardHeadingTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fcc000;
+  transform: scaleX(0);
+  transition: 1s;
+}
+
+.cardHeadingTitle:hover::after {
+  transform: scaleX(1);
+}
+
+.icon {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .cardHeadingTitle {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .entries {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

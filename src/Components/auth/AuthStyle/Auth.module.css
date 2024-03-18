@@ -1,0 +1,268 @@
+.inputWithIcon {
+  position: relative;
+  cursor: pointer;
+}
+
+.inputWithIcon input {
+  padding-right: 30px;
+}
+
+.inputWithIcon .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.form_container {
+  width: 40%;
+  background-color: #f3f3f3;
+  padding: 2.5rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.form_container label {
+  font-family: math;
+  font-size: 17px;
+}
+
+.form_container input::placeholder {
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+.mainFormHeader h3 {
+  font-size: 18px;
+  color: #1d244f;
+  font-weight: 600;
+}
+
+.container-fluid img {
+  border-radius: 18px;
+  width: 30px;
+}
+
+.rightHeaderPanel {
+  color: #b0b2c1;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.mainFormHeader .rightHeaderPanel a {
+  color: #3a34bc;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.choiceMark::before,
+.choiceMark::after {
+  content: " ";
+  display: block;
+  width: 45%;
+  height: 1px;
+  background-color: black;
+  opacity: 0.2;
+  position: relative;
+  margin: 0px 5px;
+}
+
+.signinbtn {
+  background: linear-gradient(
+    45deg,
+    #5cc3ee 0,
+    #5d91ef 29%,
+    #5e5ef0 50%,
+    #947be1 73%,
+    #ca97d2 100%
+  );
+  color: #fff;
+}
+
+.signinbtn:hover {
+  color: #000;
+  background: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.signupbtn {
+  background: linear-gradient(
+    45deg,
+    #5cc3ee 0,
+    #5d91ef 29%,
+    #5e5ef0 50%,
+    #947be1 73%,
+    #ca97d2 100%
+  );
+  color: #fff;
+}
+
+.signupbtn:hover {
+  color: #000;
+  background: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.otpbtn {
+  background: white;
+}
+
+.forgotpwd {
+  color: #3a34bc;
+  text-decoration: none;
+}
+
+.otpbtn a {
+  color: #000;
+}
+
+.otpbtn:hover {
+  background: linear-gradient(
+    45deg,
+    #5cc3ee 0,
+    #5d91ef 29%,
+    #5e5ef0 50%,
+    #947be1 73%,
+    #ca97d2 100%
+  );
+  a {
+    color: #fff;
+  }
+}
+
+button a {
+  text-decoration: none;
+}
+
+.otp {
+  background-color: #f3f3f3;
+}
+
+.otp,
+h5,
+h6 {
+  font-family: math;
+  font-size: 17px;
+  color: black;
+}
+
+.watsappbtn {
+  background: white;
+  border-color: #9ea8b3;
+}
+
+.watsappbtntext {
+  color: #4a5478;
+  font-size: 19px;
+  font-family: sans-serif;
+}
+
+.watsappbtn:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.otpverify,
+.mobilelogin {
+  background-color: #fff;
+  color: #000;
+  text-transform: uppercase;
+  font-family: math;
+  font-size: 15px;
+}
+
+.mobilelogin:hover,
+.otpverify:hover {
+  background: linear-gradient(
+    45deg,
+    #5cc3ee 0,
+    #5d91ef 29%,
+    #5e5ef0 50%,
+    #947be1 73%,
+    #ca97d2 100%
+  );
+  color: #fff;
+}
+
+.otp p {
+  font-size: 13px;
+}
+
+.expireotp {
+  color: darkblue;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.expireotp a {
+  color: darkblue;
+  font-family: math;
+  text-decoration: none;
+}
+
+.expireotp a:hover {
+  text-decoration: underline;
+  transition: ease-in-out 3s;
+}
+
+.otpVerifier {
+  font-family: monospace;
+}
+
+.successMessage {
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.alertMessage {
+  color: #da3449;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+  .form_container {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .form_container {
+    width: 65%;
+  }
+
+  .mainFormHeader {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form_container {
+    width: 90%;
+    padding: 1.4rem;
+  }
+
+  .mainFormHeader {
+    flex-direction: column;
+  }
+
+  .form_container label {
+    font-size: 18px;
+  }
+
+  .form_container input::placeholder {
+    font-size: 15px;
+    opacity: 0.4;
+  }
+
+  .signinbtn,
+  .watsappbtntext {
+    font-size: 19px;
+  }
+
+  .remembercheck {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

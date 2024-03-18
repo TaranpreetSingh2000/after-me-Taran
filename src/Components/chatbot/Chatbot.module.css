@@ -1,0 +1,139 @@
+.cardTitle {
+  font-family: none;
+  font-size: larger;
+  font-style: italic;
+  margin-bottom: 0 !important;
+}
+
+.chatbotsubmitbtn {
+  background: linear-gradient(
+    45deg,
+    #5cc3ee 0,
+    #5d91ef 29%,
+    #5e5ef0 50%,
+    #947be1 73%,
+    #ca97d2 100%
+  );
+  color: #fff;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.25s;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.xmark {
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.chatbotsubmitbtn:hover {
+  color: #000 !important;
+  background: white !important;
+}
+
+.chatbotsubmitbtn::before,
+.chatbotsubmitbtn::after {
+  content: "";
+  position: absolute;
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.chatbotsubmitbtn::before {
+  top: 0;
+  left: 0;
+}
+
+.chatbotsubmitbtn::after {
+  bottom: 0;
+  right: 0;
+}
+
+.chatbotsubmitbtn:hover::before,
+.chatbotsubmitbtn:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.chatbotsubmitbtn:hover::before {
+  border-top-color: #9b59b6;
+  border-right-color: #9b59b6;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.chatbotsubmitbtn:hover::after {
+  border-bottom-color: #9b59b6;
+  border-left-color: #9b59b6;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+}
+
+.robotContainer {
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.chatbotpopup {
+  position: fixed;
+  top: 50%;
+  right: 7%;
+  bottom: 0;
+  left: 0;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.chatmessage {
+  position: fixed;
+  bottom: 60%;
+  right: 8%;
+  padding: 2px;
+  font-size: 13px;
+  transform: translateY(-50%);
+  animation: mymove 3s infinite;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.04),
+    0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 0% 0% 30% 0%;
+}
+
+.robotContainer img {
+  animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    transform: translateY(100%);
+  }
+
+  50% {
+    transform: translateY(50%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
